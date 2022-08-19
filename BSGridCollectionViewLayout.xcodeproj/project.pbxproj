@@ -39,7 +39,7 @@
 		552D02DE21D4E9E10017BF81 /* BSGridCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSGridCollectionViewLayout.h; sourceTree = "<group>"; };
 		552D02DF21D4E9E10017BF81 /* InfoSource.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoSource.plist; sourceTree = "<group>"; };
 		558BE65521D4EB4E00F06E8B /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewLayout.swift; sourceTree = "<group>"; };
-		558BE65B21D4EBB800F06E8B /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		558BE65B21D4EBB800F06E8B /* BSGridCollectionViewLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSGridCollectionViewLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		558BE65D21D4EBB800F06E8B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		558BE66621D4EBED00F06E8B /* LastIndexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastIndexTests.swift; sourceTree = "<group>"; };
 		558BE66721D4EBED00F06E8B /* LastRowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastRowTests.swift; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 		5595158C21D4EE14007E31CE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5595158D21D4EE1E007E31CE /* BSGridCollectionViewLayout.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BSGridCollectionViewLayout.podspec; sourceTree = "<group>"; };
 		55D03E642253CDFD00567C18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		843BEC1428AFC548009E18FC /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 		552D02D121D4E9E10017BF81 = {
 			isa = PBXGroup;
 			children = (
+				843BEC1428AFC548009E18FC /* Package.swift */,
 				55D03E642253CDFD00567C18 /* Default-568h@2x.png */,
 				5595158B21D4EE09007E31CE /* README.md */,
 				5595158C21D4EE14007E31CE /* LICENSE */,
@@ -104,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				552D02DB21D4E9E10017BF81 /* BSGridCollectionViewLayout.framework */,
-				558BE65B21D4EBB800F06E8B /* Tests.xctest */,
+				558BE65B21D4EBB800F06E8B /* BSGridCollectionViewLayoutTests.xctest */,
 				558BE67221D4EC3B00F06E8B /* Example.app */,
 			);
 			name = Products;
@@ -184,9 +186,9 @@
 			productReference = 552D02DB21D4E9E10017BF81 /* BSGridCollectionViewLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		558BE65A21D4EBB800F06E8B /* Tests */ = {
+		558BE65A21D4EBB800F06E8B /* BSGridCollectionViewLayoutTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 558BE66321D4EBB800F06E8B /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 558BE66321D4EBB800F06E8B /* Build configuration list for PBXNativeTarget "BSGridCollectionViewLayoutTests" */;
 			buildPhases = (
 				558BE65721D4EBB800F06E8B /* Sources */,
 				558BE65821D4EBB800F06E8B /* Frameworks */,
@@ -197,9 +199,9 @@
 			dependencies = (
 				558BE66221D4EBB800F06E8B /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = BSGridCollectionViewLayoutTests;
 			productName = Tests;
-			productReference = 558BE65B21D4EBB800F06E8B /* Tests.xctest */;
+			productReference = 558BE65B21D4EBB800F06E8B /* BSGridCollectionViewLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		558BE67121D4EC3B00F06E8B /* Example */ = {
@@ -257,7 +259,7 @@
 			projectRoot = "";
 			targets = (
 				552D02DA21D4E9E10017BF81 /* BSGridCollectionViewLayout */,
-				558BE65A21D4EBB800F06E8B /* Tests */,
+				558BE65A21D4EBB800F06E8B /* BSGridCollectionViewLayoutTests */,
 				558BE67121D4EC3B00F06E8B /* Example */,
 			);
 		};
@@ -395,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -453,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -611,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		558BE66321D4EBB800F06E8B /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		558BE66321D4EBB800F06E8B /* Build configuration list for PBXNativeTarget "BSGridCollectionViewLayoutTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				558BE66421D4EBB800F06E8B /* Debug */,

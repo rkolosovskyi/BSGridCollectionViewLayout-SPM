@@ -17,14 +17,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "558BE65A21D4EBB800F06E8B"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BuildableName = "BSGridCollectionViewLayoutTests.xctest"
+               BlueprintName = "BSGridCollectionViewLayoutTests"
                ReferencedContainer = "container:BSGridCollectionViewLayout.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -36,8 +34,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
